@@ -7,7 +7,7 @@ import elib
 
 def main():
     """
-    Dummy
+    Dummy test
     """
     from pvnhxgmgiq import __version__
     print(__version__, type(__version__))
