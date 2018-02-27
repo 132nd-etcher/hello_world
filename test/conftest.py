@@ -35,10 +35,12 @@ def pytest_runtest_setup(item):
         pytest.skip('skipping long tests')
 
 
-@pytest.fixture(autouse=True)
-def _dummy():
-    path = sys.path
-    here = Path('.').absolute()
-    sys.path = f'{str(here)}{os.pathsep}{sys.path})'
-    yield
-    sys.path = path
+# @pytest.fixture(autouse=True)
+# def _dummy():
+#     path = sys.path
+#     here = Path('.').parent.absolute()
+#     sys.path.append(str(here))
+#     print(sys.path)
+#     yield
+#     sys.path.remove(here)
+#     sys.path = path
