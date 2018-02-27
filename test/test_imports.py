@@ -21,7 +21,6 @@ def patch_version(monkeypatch):
 @pytest.mark.nocleandir
 @pytest.mark.parametrize('module', glob.glob('pvnhxgmgiq/*.py', recursive=True))
 def test_imports(module):
-    # print(module[2:-3])
     module = module[:-3].replace('\\', '.')
     print(f'importing {module}')
     __import__(module)

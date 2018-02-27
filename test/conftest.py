@@ -1,6 +1,8 @@
 # coding=utf-8
 
 import sys
+from pathlib import Path
+import os
 import pytest
 
 
@@ -31,3 +33,12 @@ def pytest_runtest_setup(item):
     long_marker = item.get_marker("long")
     if long_marker is not None and not item.config.getoption('long'):
         pytest.skip('skipping long tests')
+
+
+@pytest.fixture(autouse=True)
+def _dummy():
+    path = sys.path
+    here = Path('.').absolute()
+    sys.path = f'{str(here)}{os.pathsep}{sys.path})'
+    yield
+    sys.path = path
