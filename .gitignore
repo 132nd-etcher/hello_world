@@ -6,3 +6,6 @@ __pycache__
 /QXUYPWGPQO.spec
 /build/
 /dist/
+/htmlcov/
+/coverage.xml
+/.coverage
