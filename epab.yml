@@ -1,4 +1,4 @@
-package: 'QXUYPWGPQO'
+package: 'pvnhxgmgiq'
 
 doc:
   repo: 'https://github.com/132nd-etcher/emft-doc.git'
@@ -6,6 +6,6 @@ doc:
 
 test:
   runner_options:
-  av_runner_options: '--long'
+  av_runner_options:
 
-entry_point: 'QXUYPWGPQO/__main__.py'
+entry_point: 'pvnhxgmgiq/__main__.py'

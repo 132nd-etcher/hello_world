@@ -31,12 +31,12 @@ Topic :: Utilities
 
 entry_points = '''
 [console_scripts]
-hello=QXUYPWGPQO.__main__:main
+hello=pvnhxgmgiq.__main__:main
 '''
 
 setup(
-    name='QXUYPWGPQO',
-    package_dir={'QXUYPWGPQO': 'QXUYPWGPQO'},
+    name='pvnhxgmgiq',
+    package_dir={'pvnhxgmgiq': 'pvnhxgmgiq'},
     use_scm_version=True,
     install_requires=['elib'],
     tests_require=[],
