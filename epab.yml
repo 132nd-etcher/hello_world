@@ -7,6 +7,7 @@ doc:
 test:
   runner_options:
   av_runner_options:
-  coverage__fail_under: 0
+  coverage:
+    fail_under: 0
 
 entry_point: 'pvnhxgmgiq/__main__.py'
